@@ -175,7 +175,7 @@ body {
   height: 100%;
 }
 body {
-  background: url("http://www.dmoe.cc/random.php");
+  background: url("https://www.dmoe.cc/random.php");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
@@ -183,7 +183,7 @@ body {
   font-family: 'Lato', "PingFang SC", "Microsoft YaHei", sans-serif;
   font-size: 1em;
   line-height: 2;
-  opacity: 0.9;
+  opacity: 1;
 }
 @media (max-width: 991px) {
   body {
@@ -1145,6 +1145,13 @@ pre .javascript .function {
   margin: 0 auto;
   max-width: 96px;
   padding: 2px;
+  border-radius: 50%;
+}
+.site-author-image {
+  transition: transform 1s ease-out;
+}
+.site-author-image:hover {
+  transform: rotateZ(360deg);
 }
 .site-author-name {
   color: #f5f5f5;
@@ -1172,7 +1179,7 @@ pre .javascript .function {
 }
 .links-of-author a::before,
 .links-of-author span.exturl::before {
-  background: #ffc477;
+  background: #ffff3c;
   border-radius: 50%;
   content: ' ';
   display: inline-block;
