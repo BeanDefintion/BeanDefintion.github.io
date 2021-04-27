@@ -1175,7 +1175,7 @@ pre .javascript .function {
 }
 .links-of-author a::before,
 .links-of-author span.exturl::before {
-  background: #ffb1ff;
+  background: #0652ff;
   border-radius: 50%;
   content: ' ';
   display: inline-block;
@@ -2395,7 +2395,7 @@ embed {
   white-space: nowrap;
 }
 body {
-  background-image: url("http://api.mtyqx.cn/tapi/random.php");
+  background-image: url("https://www.dmoe.cc/random.php");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: 50% 50%;
@@ -2417,19 +2417,22 @@ body {
   box-shadow: rgba(0,0,0,0.1) 0px 15px 35px 0px, rgba(0,0,0,0.31) 6px 6px 10px 0px;
 }
 .brand {
-  color: #390044;
+  color: #fff;
+  padding: 0 40px;
+  border-bottom: none;
+  display: inline-block;
+  vertical-align: top;
+  line-height: 36px;
+  font-size: 24px;
+  font-weight: normal;
 }
 site-subtitle {
   margin-top: 10px;
   font-size: 13px;
   color: #fff;
 }
-.header-inner {
-  background: #bc0100;
-  background: linear-gradient(0deg, #bc0100 20%, #9b1d22 80%);
-}
 .menu-item a {
-  color: #fbda41;
+  color: #2d03ff;
 }
 .menu-item-active a {
   color: #555;
@@ -2481,9 +2484,10 @@ site-subtitle {
   box-shadow: 0 1px 3px #6f42c1, 0 1px 2px #d9534f;
   padding: 2px 10px;
   margin: 8px;
-  background: rgba(193,66,92,0);
+  background: none;
   border-bottom: none;
   border-radius: 20px;
+  font-size: 13px;
 }
 .headband {
   height: 0px;
