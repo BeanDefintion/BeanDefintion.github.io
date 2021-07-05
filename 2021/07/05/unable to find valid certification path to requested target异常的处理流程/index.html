@@ -20,31 +20,33 @@
     var CONFIG = {"hostname":"xymt.space","root":"/","scheme":"Muse","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":true},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":{"enable":true,"onlypost":false},"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
   </script>
 
-  <meta name="description" content="我们都曾年轻过 幸福过 并对生活一往情深">
-<meta property="og:type" content="website">
-<meta property="og:title" content="心月梦天的乌托邦">
-<meta property="og:url" content="https://xymt.space/index.html">
+  <meta name="description" content="起因:  项目之前都是访问的第三方的http地址,用的restTemplate挺好的,这天突然要访问一个带https的ip地址,这一访问就出问题了,无情的提示unable to find valid certification path to requested target.出现了问题怎么办,当然是谷歌呀. 经过  ​    1.首先确定了这是证书问题，然后确定了证书是暂时无法修改了之后只有从我">
+<meta property="og:type" content="article">
+<meta property="og:title" content="unable to find valid certification path to requested target异常的处理">
+<meta property="og:url" content="https://xymt.space/2021/07/05/unable%20to%20find%20valid%20certification%20path%20to%20requested%20target%E5%BC%82%E5%B8%B8%E7%9A%84%E5%A4%84%E7%90%86%E6%B5%81%E7%A8%8B/index.html">
 <meta property="og:site_name" content="心月梦天的乌托邦">
-<meta property="og:description" content="我们都曾年轻过 幸福过 并对生活一往情深">
+<meta property="og:description" content="起因:  项目之前都是访问的第三方的http地址,用的restTemplate挺好的,这天突然要访问一个带https的ip地址,这一访问就出问题了,无情的提示unable to find valid certification path to requested target.出现了问题怎么办,当然是谷歌呀. 经过  ​    1.首先确定了这是证书问题，然后确定了证书是暂时无法修改了之后只有从我">
 <meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2021-07-05T00:08:08.000Z">
+<meta property="article:modified_time" content="2021-07-05T13:28:46.910Z">
 <meta property="article:author" content="心月梦天">
-<meta property="article:tag" content="心月梦天">
+<meta property="article:tag" content="个人实战">
 <meta name="twitter:card" content="summary">
 
-<link rel="canonical" href="https://xymt.space/">
+<link rel="canonical" href="https://xymt.space/2021/07/05/unable%20to%20find%20valid%20certification%20path%20to%20requested%20target%E5%BC%82%E5%B8%B8%E7%9A%84%E5%A4%84%E7%90%86%E6%B5%81%E7%A8%8B/">
 
 
 <script id="page-configurations">
   // https://hexo.io/docs/variables.html
   CONFIG.page = {
     sidebar: "",
-    isHome : true,
-    isPost : false,
+    isHome : false,
+    isPost : true,
     lang   : 'zh-CN'
   };
 </script>
 
-  <title>心月梦天的乌托邦</title>
+  <title>unable to find valid certification path to requested target异常的处理 | 心月梦天的乌托邦</title>
   
 
 
@@ -180,9 +182,10 @@
         <div class="content-wrap">
           
 
-          <div class="content index posts-expand">
+          <div class="content post posts-expand">
             
-      
+
+    
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
@@ -198,10 +201,9 @@
       <meta itemprop="name" content="心月梦天的乌托邦">
     </span>
       <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2021/07/05/unable%20to%20find%20valid%20certification%20path%20to%20requested%20target%E5%BC%82%E5%B8%B8%E7%9A%84%E5%A4%84%E7%90%86%E6%B5%81%E7%A8%8B/" class="post-title-link" itemprop="url">unable to find valid certification path to requested target异常的处理</a>
-        </h2>
+        <h1 class="post-title" itemprop="name headline">
+          unable to find valid certification path to requested target异常的处理
+        </h1>
 
         <div class="post-meta">
             <span class="post-meta-item">
@@ -248,7 +250,7 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <h4>起因:</h4>
+        <h4>起因:</h4>
 
 <p>项目之前都是访问的第三方的http地址,用的restTemplate挺好的,这天突然要访问一个带https的ip地址,这一访问就出问题了,无情的提示unable to find valid certification path to requested target.出现了问题怎么办,当然是谷歌呀.</p>
 <h4>经过</h4>
@@ -272,327 +274,33 @@
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br><span class="line">120</span><br><span class="line">121</span><br><span class="line">122</span><br></pre></td><td class="code"><pre><span class="line">&#x2F;**</span><br><span class="line"> * 不验证https</span><br><span class="line"> *</span><br><span class="line"> * @author jack</span><br><span class="line"> *&#x2F;</span><br><span class="line">@Slf4j</span><br><span class="line">public class NoValidHttpsRestTemplateUtil &#123;</span><br><span class="line"></span><br><span class="line">    private NoValidHttpsRestTemplateUtil() &#123;</span><br><span class="line"></span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    private static RestTemplate restTemplate;</span><br><span class="line"></span><br><span class="line">    &#x2F;**</span><br><span class="line">     * ConnectTimeOut</span><br><span class="line">     *&#x2F;</span><br><span class="line">    private static final int CONN_TIME_OUT &#x3D; 20000;</span><br><span class="line"></span><br><span class="line">    &#x2F;**</span><br><span class="line">     * ReadTimeOut</span><br><span class="line">     *&#x2F;</span><br><span class="line">    private static final int SOCKET_TIME_OUT &#x3D; 20000;</span><br><span class="line"></span><br><span class="line">    &#x2F;**</span><br><span class="line">     * 总连接数</span><br><span class="line">     *&#x2F;</span><br><span class="line">    private static final int MAX_TOTAL &#x3D; 500;</span><br><span class="line"></span><br><span class="line">    &#x2F;**</span><br><span class="line">     * 同路由的并发数</span><br><span class="line">     *&#x2F;</span><br><span class="line">    private static final int MAX_PER_ROUTE &#x3D; 200;</span><br><span class="line"></span><br><span class="line">    &#x2F;**</span><br><span class="line">     * 重试次数</span><br><span class="line">     *&#x2F;</span><br><span class="line">    private static final int RETRY_COUNT &#x3D; 2;</span><br><span class="line"></span><br><span class="line">    &#x2F;**</span><br><span class="line">     * 连接不够用的等待时间，不宜过长，必须设置，比如连接不够用时，时间过长将是灾难性的</span><br><span class="line">     *&#x2F;</span><br><span class="line">    private static final int CONN_REQUEST_TIME_OUT &#x3D; 500;</span><br><span class="line"></span><br><span class="line">    static &#123;</span><br><span class="line">        &#x2F;&#x2F; httpClient连接配置，底层是配置RequestConfig</span><br><span class="line">        HttpComponentsClientHttpRequestFactory clientHttpRequestFactory &#x3D; new HttpComponentsClientHttpRequestFactory();</span><br><span class="line">        &#x2F;&#x2F; 连接超时</span><br><span class="line">        clientHttpRequestFactory.setConnectTimeout(CONN_TIME_OUT);</span><br><span class="line">        &#x2F;&#x2F; 数据读取超时时间，即SocketTimeout</span><br><span class="line">        clientHttpRequestFactory.setReadTimeout(SOCKET_TIME_OUT);</span><br><span class="line">        &#x2F;&#x2F; 连接不够用的等待时间，不宜过长，必须设置，比如连接不够用时，时间过长将是灾难性的</span><br><span class="line">        clientHttpRequestFactory.setConnectionRequestTimeout(CONN_REQUEST_TIME_OUT);</span><br><span class="line"></span><br><span class="line">        &#x2F;&#x2F; 添加内容转换器</span><br><span class="line">        List&lt;HttpMessageConverter&lt;?&gt;&gt; messageConverters &#x3D; new ArrayList&lt;&gt;();</span><br><span class="line">        messageConverters.add(new StringHttpMessageConverter(StandardCharsets.UTF_8));</span><br><span class="line">        messageConverters.add(new ByteArrayHttpMessageConverter());</span><br><span class="line">        messageConverters.add(new FormHttpMessageConverter());</span><br><span class="line"></span><br><span class="line">        &#x2F;&#x2F;设置fastjson支持的格式</span><br><span class="line">        FastJsonHttpMessageConverter fastJsonHttpMessageConverter &#x3D; new FastJsonHttpMessageConverter();</span><br><span class="line">        List&lt;MediaType&gt; supportedMediaTypes &#x3D; new ArrayList&lt;&gt;();</span><br><span class="line">        supportedMediaTypes.add(MediaType.APPLICATION_JSON);</span><br><span class="line">        supportedMediaTypes.add(MediaType.APPLICATION_JSON_UTF8);</span><br><span class="line">        supportedMediaTypes.add(MediaType.APPLICATION_ATOM_XML);</span><br><span class="line">        supportedMediaTypes.add(MediaType.APPLICATION_FORM_URLENCODED);</span><br><span class="line">        supportedMediaTypes.add(MediaType.APPLICATION_OCTET_STREAM);</span><br><span class="line">        supportedMediaTypes.add(MediaType.APPLICATION_PDF);</span><br><span class="line">        supportedMediaTypes.add(MediaType.APPLICATION_XHTML_XML);</span><br><span class="line">        supportedMediaTypes.add(MediaType.APPLICATION_XML);</span><br><span class="line">        supportedMediaTypes.add(MediaType.IMAGE_GIF);</span><br><span class="line">        supportedMediaTypes.add(MediaType.IMAGE_JPEG);</span><br><span class="line">        supportedMediaTypes.add(MediaType.IMAGE_PNG);</span><br><span class="line">        supportedMediaTypes.add(MediaType.TEXT_HTML);</span><br><span class="line">        supportedMediaTypes.add(MediaType.TEXT_MARKDOWN);</span><br><span class="line">        supportedMediaTypes.add(MediaType.TEXT_PLAIN);</span><br><span class="line">        supportedMediaTypes.add(MediaType.TEXT_XML);</span><br><span class="line">        fastJsonHttpMessageConverter.setSupportedMediaTypes(supportedMediaTypes);</span><br><span class="line"></span><br><span class="line">        &#x2F;&#x2F; 用FastJson替代原生的jackson转换器</span><br><span class="line">        messageConverters.add(fastJsonHttpMessageConverter);</span><br><span class="line"></span><br><span class="line">        &#x2F;&#x2F; https认证永远为true</span><br><span class="line">        SSLContext sslContext;</span><br><span class="line">        try &#123;</span><br><span class="line">            TrustStrategy acceptingTrustStrategy &#x3D; (x509Certificates, authType) -&gt; true;</span><br><span class="line">            sslContext &#x3D; SSLContexts.custom().loadTrustMaterial(null, acceptingTrustStrategy).build();</span><br><span class="line"></span><br><span class="line">            SSLConnectionSocketFactory csf &#x3D;</span><br><span class="line">                    new SSLConnectionSocketFactory(sslContext, new NoopHostnameVerifier());</span><br><span class="line"></span><br><span class="line">            &#x2F;&#x2F; 使用https注册 长连接保持30秒</span><br><span class="line">            PoolingHttpClientConnectionManager pollingConnectionManager &#x3D; new PoolingHttpClientConnectionManager(</span><br><span class="line">                    RegistryBuilder.&lt;ConnectionSocketFactory&gt;create()</span><br><span class="line">                            .register(&quot;http&quot;, PlainConnectionSocketFactory.getSocketFactory())</span><br><span class="line">                            .register(&quot;https&quot;, csf).build(), null, null, null, 30, TimeUnit.SECONDS);</span><br><span class="line">            &#x2F;&#x2F; 总连接数</span><br><span class="line">            pollingConnectionManager.setMaxTotal(MAX_TOTAL);</span><br><span class="line">            &#x2F;&#x2F; 同路由的并发数</span><br><span class="line">            pollingConnectionManager.setDefaultMaxPerRoute(MAX_PER_ROUTE);</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">            CloseableHttpClient httpClient &#x3D; HttpClients.custom()</span><br><span class="line">                    .setSSLSocketFactory(csf)</span><br><span class="line">                    .setConnectionManager(pollingConnectionManager)</span><br><span class="line">                    .setRetryHandler(new DefaultHttpRequestRetryHandler(RETRY_COUNT, true))</span><br><span class="line">                    .setKeepAliveStrategy(new DefaultConnectionKeepAliveStrategy())</span><br><span class="line">                    .build();</span><br><span class="line"></span><br><span class="line">            clientHttpRequestFactory.setHttpClient(httpClient);</span><br><span class="line"></span><br><span class="line">            restTemplate &#x3D; new RestTemplate(clientHttpRequestFactory);</span><br><span class="line">            restTemplate.setMessageConverters(messageConverters);</span><br><span class="line">            restTemplate.setErrorHandler(new DefaultResponseErrorHandler());</span><br><span class="line"></span><br><span class="line">            log.info(&quot;no valid https restTemplate initialized successfully.&quot;);</span><br><span class="line">        &#125; catch (NoSuchAlgorithmException | KeyManagementException | KeyStoreException e) &#123;</span><br><span class="line">            log.error(&quot;初始化不验证https的restTemplate失e&#x3D;&#123;&#125;,message&#x3D;&#123;&#125;&quot;, e, e.getMessage());</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
 
-      
     </div>
 
     
     
     
+
       <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
+          <div class="post-tags">
+              <a href="/tags/%E4%B8%AA%E4%BA%BA%E5%AE%9E%E6%88%98/" rel="tag"># 个人实战</a>
+          </div>
 
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://xymt.space/2021/06/05/centterJavaIO%E6%9C%BA%E5%88%B6/">
+        
 
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avator.jpeg">
-      <meta itemprop="name" content="心月梦天">
-      <meta itemprop="description" content="我们都曾年轻过 幸福过 并对生活一往情深">
-    </span>
 
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="心月梦天的乌托邦">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2021/06/05/centterJavaIO%E6%9C%BA%E5%88%B6/" class="post-title-link" itemprop="url">未命名</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-
-              <time title="创建时间：2021-06-05 19:11:12" itemprop="dateCreated datePublished" datetime="2021-06-05T19:11:12+08:00">2021-06-05</time>
-            </span>
-
-          <br>
-            <span class="post-meta-item" title="本文字数">
-              <span class="post-meta-item-icon">
-                <i class="far fa-file-word"></i>
-              </span>
-                <span class="post-meta-item-text">本文字数：</span>
-              <span>222</span>
-            </span>
-            <span class="post-meta-item" title="阅读时长">
-              <span class="post-meta-item-icon">
-                <i class="far fa-clock"></i>
-              </span>
-                <span class="post-meta-item-text">阅读时长 &asymp;</span>
-              <span>1 分钟</span>
-            </span>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <h1 id="JavaIO机制"><a href="#JavaIO机制" class="headerlink" title="JavaIO机制"></a><centter>JavaIO机制</h1><h2 id="IO类型"><a href="#IO类型" class="headerlink" title="IO类型"></a>IO类型</h2><ol>
-<li>按处理数据的类型可分为: InputStream OutputStream 和 Reader Writer 字节流和字符流</li>
-<li>按传输方式可分为 File 和 Socket  面向磁盘和面向网络</li>
-</ol>
-<h2 id="Unix-IO"><a href="#Unix-IO" class="headerlink" title="Unix IO"></a>Unix IO</h2><ol>
-<li><p>​    进程通过RecvForm select epoll aio_read 等系统调用函数进行IO操作,将数据从内核拷贝到用户空间.</p>
-<h3 id="用户态-内核态"><a href="#用户态-内核态" class="headerlink" title="用户态 内核态"></a>用户态 内核态</h3><ol>
-<li>因为用户进程无法在自己的进程空间直接访问内核态的数据,所以操作系统提供了系统中断和函数调用的方式来访问内核空间</li>
-</ol>
-</li>
-</ol>
-
-      
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/2021/06/05/centterJavaIO%E6%9C%BA%E5%88%B6/" rel="prev" title="">
+      <i class="fa fa-chevron-left"></i> 
+    </a></div>
+      <div class="post-nav-item"></div>
     </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
       </footer>
+    
   </article>
   
   
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://xymt.space/2021/03/21/%E8%85%BE%E8%AE%AF%E4%BA%91%E6%90%AD%E5%BB%BAHexo%E5%8D%9A%E5%AE%A2/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avator.jpeg">
-      <meta itemprop="name" content="心月梦天">
-      <meta itemprop="description" content="我们都曾年轻过 幸福过 并对生活一往情深">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="心月梦天的乌托邦">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2021/03/21/%E8%85%BE%E8%AE%AF%E4%BA%91%E6%90%AD%E5%BB%BAHexo%E5%8D%9A%E5%AE%A2/" class="post-title-link" itemprop="url">腾讯云搭建Hexo博客</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-
-              <time title="创建时间：2021-03-21 23:23:23" itemprop="dateCreated datePublished" datetime="2021-03-21T23:23:23+08:00">2021-03-21</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2021-04-21 02:55:02" itemprop="dateModified" datetime="2021-04-21T02:55:02+08:00">2021-04-21</time>
-              </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-folder"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/%E5%AD%A6%E4%B9%A0/" itemprop="url" rel="index"><span itemprop="name">学习</span></a>
-                </span>
-            </span>
-
-          <br>
-            <span class="post-meta-item" title="本文字数">
-              <span class="post-meta-item-icon">
-                <i class="far fa-file-word"></i>
-              </span>
-                <span class="post-meta-item-text">本文字数：</span>
-              <span>3k</span>
-            </span>
-            <span class="post-meta-item" title="阅读时长">
-              <span class="post-meta-item-icon">
-                <i class="far fa-clock"></i>
-              </span>
-                <span class="post-meta-item-text">阅读时长 &asymp;</span>
-              <span>3 分钟</span>
-            </span>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <h5 id="1-安装git"><a href="#1-安装git" class="headerlink" title="1.安装git"></a>1.安装git</h5><h6 id="https-npm-taobao-org-mirrors-git-for-windows"><a href="#https-npm-taobao-org-mirrors-git-for-windows" class="headerlink" title="https://npm.taobao.org/mirrors/git-for-windows/"></a><a target="_blank" rel="noopener" href="https://npm.taobao.org/mirrors/git-for-windows/">https://npm.taobao.org/mirrors/git-for-windows/</a></h6><h5 id="2-安装Node-js"><a href="#2-安装Node-js" class="headerlink" title="2.安装Node.js"></a>2.安装Node.js</h5><p>​    <a target="_blank" rel="noopener" href="https://nodejs.org/zh-cn/">https://nodejs.org/zh-cn/</a></p>
-<h5 id="3-安装Hexo"><a href="#3-安装Hexo" class="headerlink" title="3.安装Hexo"></a>3.安装Hexo</h5><h6 id="因为国内网速的原因-我们选择用淘宝的镜像-并使用cnpm命令来替代npm命令"><a href="#因为国内网速的原因-我们选择用淘宝的镜像-并使用cnpm命令来替代npm命令" class="headerlink" title="因为国内网速的原因,我们选择用淘宝的镜像,并使用cnpm命令来替代npm命令."></a>因为国内网速的原因,我们选择用淘宝的镜像,并使用cnpm命令来替代npm命令.</h6><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install -g cnpm --registry&#x3D;https:&#x2F;&#x2F;registry.npm.taobao.org</span><br></pre></td></tr></table></figure>
-
-<h6 id="执行命令用全局模式安装hexo命令行，全局模式安装意味着你在电脑的任何文件位置都可以使用"><a href="#执行命令用全局模式安装hexo命令行，全局模式安装意味着你在电脑的任何文件位置都可以使用" class="headerlink" title="执行命令用全局模式安装hexo命令行，全局模式安装意味着你在电脑的任何文件位置都可以使用"></a>执行命令用全局模式安装hexo命令行，全局模式安装意味着你在电脑的任何文件位置都可以使用</h6><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cnpm install hexo-cli -g</span><br></pre></td></tr></table></figure>
-
-<p>​    本地文件夹新建个存放博客的文件夹,然后进入该文件夹,执行命令初始化blog文件夹</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo init blog</span><br></pre></td></tr></table></figure>
-
-<h6 id="我们会看到如下警告"><a href="#我们会看到如下警告" class="headerlink" title="我们会看到如下警告:"></a>我们会看到如下警告:</h6><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">WARN  Failed to install dependencies. Please run &#39;npm install&#39; in &quot;F:\My WebSite\blog&quot; folder.</span><br></pre></td></tr></table></figure>
-
-<h6 id="所以我们进入生成的blog文件夹手动执行以下命令"><a href="#所以我们进入生成的blog文件夹手动执行以下命令" class="headerlink" title="所以我们进入生成的blog文件夹手动执行以下命令:"></a>所以我们进入生成的blog文件夹手动执行以下命令:</h6><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cnpm install</span><br></pre></td></tr></table></figure>
-
-<h6 id="执行以下命令来安装插件"><a href="#执行以下命令来安装插件" class="headerlink" title="执行以下命令来安装插件"></a>执行以下命令来安装插件</h6><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">cnpm install hexo-deployer-git --save</span><br><span class="line">cnpm install hexo-server</span><br></pre></td></tr></table></figure>
-
-<p>安装成功后 执行以下命令 会显示一个本地链接 我们浏览器上输入它就会看到本地效果</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo s</span><br></pre></td></tr></table></figure>
-
-<p>这样本地就完成了配置.</p>
-<h5 id="4-服务器配置"><a href="#4-服务器配置" class="headerlink" title="4.服务器配置"></a>4.服务器配置</h5><h6 id="安装nginx和git"><a href="#安装nginx和git" class="headerlink" title="安装nginx和git"></a>安装nginx和git</h6><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">yum -y install git</span><br><span class="line">yum -y install nginx</span><br><span class="line">systemctl enable nginx</span><br><span class="line">systemctl restart mginx</span><br></pre></td></tr></table></figure>
-
-<p>这时候访问服务器的ip地址已经能看到403了</p>
-<h5 id="配置git仓库"><a href="#配置git仓库" class="headerlink" title="配置git仓库"></a>配置git仓库</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">[root@VM-4-9-centos ~]# cd &#x2F;opt&#x2F;</span><br><span class="line">[root@VM-4-9-centos opt]# mkdir ztj</span><br><span class="line">[root@VM-4-9-centos opt]# cd ztj&#x2F;</span><br><span class="line">[root@VM-4-9-centos xymt]# mkdir myblog</span><br><span class="line">[root@VM-4-9-centos xymt]# cd myblog&#x2F;</span><br><span class="line">[root@VM-4-9-centos myblog]# chown -R $USER:$USER &#x2F;opt&#x2F;ztj&#x2F;myblog&#x2F;</span><br><span class="line">[root@VM-4-9-centos myblog]# chown -R 755 &#x2F;opt&#x2F;ztj&#x2F;myblog&#x2F;</span><br><span class="line">[root@VM-4-9-centos myblog]# git init --bare myblog.git</span><br></pre></td></tr></table></figure>
-
-<h5 id="配置Nginx托管文件目录"><a href="#配置Nginx托管文件目录" class="headerlink" title="配置Nginx托管文件目录"></a>配置Nginx托管文件目录</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">mkdir -p &#x2F;var&#x2F;www&#x2F;hexo</span><br><span class="line">chown -R $USER:$USER &#x2F;var&#x2F;www&#x2F;hexo</span><br><span class="line">chmod -R 755 &#x2F;var&#x2F;www&#x2F;hexo</span><br></pre></td></tr></table></figure>
-
-<h6 id="同时修改nginx的配置文件-vim-etc-nginx-nginx-conf"><a href="#同时修改nginx的配置文件-vim-etc-nginx-nginx-conf" class="headerlink" title="同时修改nginx的配置文件 vim /etc/nginx/nginx.conf"></a>同时修改nginx的配置文件 vim /etc/nginx/nginx.conf</h6><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">root         &#x2F;var&#x2F;www&#x2F;hexo;</span><br></pre></td></tr></table></figure>
-
-<h5 id="配置Git-hooks"><a href="#配置Git-hooks" class="headerlink" title="配置Git hooks"></a>配置Git hooks</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">vim &#x2F;opt&#x2F;ztj&#x2F;myblog&#x2F;myblog.git&#x2F;hooks&#x2F;post-receive</span><br></pre></td></tr></table></figure>
-
-<h6 id="输入以下文字"><a href="#输入以下文字" class="headerlink" title="输入以下文字"></a>输入以下文字</h6><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">#!&#x2F;bin&#x2F;bash</span><br><span class="line"></span><br><span class="line">git --work-tree&#x3D;&#x2F;var&#x2F;www&#x2F;hexo --git-dir&#x3D;&#x2F;var&#x2F;repo&#x2F;ganahBlog.git checkout -f</span><br></pre></td></tr></table></figure>
-
-<p>同时赋予执行权限</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">chmod +x &#x2F;opt&#x2F;ztj&#x2F;myblog&#x2F;myblog.git&#x2F;hooks&#x2F;post-receive</span><br><span class="line">chmod -R 777 &#x2F;var&#x2F;www&#x2F;hexo</span><br></pre></td></tr></table></figure>
-
-<h5 id="配置用户公匙-使得本地可以从服务器clone数据和push"><a href="#配置用户公匙-使得本地可以从服务器clone数据和push" class="headerlink" title="配置用户公匙 使得本地可以从服务器clone数据和push"></a>配置用户公匙 使得本地可以从服务器clone数据和push</h5><h6 id="在根目录下创建-ssh文件夹"><a href="#在根目录下创建-ssh文件夹" class="headerlink" title="在根目录下创建 .ssh文件夹"></a>在根目录下创建 <code>.ssh</code>文件夹</h6><h6 id="本地打开GitBash"><a href="#本地打开GitBash" class="headerlink" title="本地打开GitBash"></a>本地打开GitBash</h6><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">cd ~</span><br><span class="line">cd .ssh</span><br><span class="line">ssh-keygen</span><br><span class="line">chmod 700 ~&#x2F;.ssh</span><br><span class="line">chmod 600 ~&#x2F;.ssh&#x2F;id_rsa</span><br></pre></td></tr></table></figure>
-
-<h6 id="上传id-rsa-pub文件到服务器刚刚创建的-ssh文件夹中-并执行以下命令"><a href="#上传id-rsa-pub文件到服务器刚刚创建的-ssh文件夹中-并执行以下命令" class="headerlink" title="上传id_rsa.pub文件到服务器刚刚创建的.ssh文件夹中 并执行以下命令"></a>上传id_rsa.pub文件到服务器刚刚创建的.ssh文件夹中 并执行以下命令</h6><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">cd ~&#x2F;.ssh</span><br><span class="line">cp id_rsa.pub authorized_keys</span><br><span class="line">cat id_rsa.pub &gt;&gt; ~&#x2F;.ssh&#x2F;authorized_keys</span><br><span class="line"></span><br><span class="line">修改文件权限：</span><br><span class="line">chmod 600 ~&#x2F;.ssh&#x2F;authorized_keys</span><br><span class="line">chmod 700 ~&#x2F;.ssh</span><br><span class="line"></span><br><span class="line">确保设置了正确的SELinux上下文。</span><br><span class="line">restorecon -Rv ~&#x2F;.ssh</span><br></pre></td></tr></table></figure>
-
-<p>本地执行测试命令</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">ssh -v git@xxx.xxx.xxx.xxx（你的公网 IP）</span><br><span class="line">显示:</span><br><span class="line">Last login: Thu Mar 11 22:57:10 2021 from 39.182.12.170</span><br></pre></td></tr></table></figure>
-
-<h5 id="5-部署到远程服务器"><a href="#5-部署到远程服务器" class="headerlink" title="5.部署到远程服务器"></a>5.部署到远程服务器</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git clone root@&#123;云服务器IP&#125;:&#x2F;var&#x2F;repo&#x2F;ganahBlog.git</span><br></pre></td></tr></table></figure>
-
-<h6 id="编辑站点配置文件-config-yml-将-url-改成https-云服务器IP"><a href="#编辑站点配置文件-config-yml-将-url-改成https-云服务器IP" class="headerlink" title="编辑站点配置文件_config.yml , 将 url 改成https://{云服务器IP}/"></a>编辑<strong>站点</strong>配置文件<code>_config.yml</code> , 将 url 改成<code>https://&#123;云服务器IP&#125;/</code></h6><h6 id="将-deploy-repo改为-服务器用户名-服务IP-var-repo-ganahBlog-git-将"><a href="#将-deploy-repo改为-服务器用户名-服务IP-var-repo-ganahBlog-git-将" class="headerlink" title="将 deploy repo改为 {服务器用户名}@{服务IP}:/var/repo/ganahBlog.git 将"></a>将 deploy repo改为 <code>&#123;服务器用户名&#125;@&#123;服务IP&#125;:/var/repo/ganahBlog.git</code> 将</h6><h6 id="type改成git"><a href="#type改成git" class="headerlink" title="type改成git"></a>type改成git</h6><h6 id="在个人博客站点目录下，打开-Git-bash-使用-以下命令部署："><a href="#在个人博客站点目录下，打开-Git-bash-使用-以下命令部署：" class="headerlink" title="在个人博客站点目录下，打开 Git bash ,使用 以下命令部署："></a>在个人博客站点目录下，打开 Git bash ,使用 以下命令部署：</h6><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo clean &amp;&amp; hexo g -d</span><br></pre></td></tr></table></figure>
-
-<p>出现问题:</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">git报错remote: error: cannot run hooks&#x2F;post-receive: No such file or directory</span><br><span class="line"></span><br><span class="line">如果你也显示这个错误但是其实在该路径上有上有这个文件，那么显然你遇到和我一样的情况，即你是Windows下创建的文件，但是试图在Lunix系统去打开它。这是在Windows下调用CentOS上文件显示的结果，如果你还有疑虑可以尝试在CentOS直接打开该文件，那么你将会遇到下面的错误：</span><br><span class="line">-bash: hooks&#x2F;post-receive: &#x2F;bin&#x2F;bash^M: bad interpreter: No such file or directory</span><br><span class="line"></span><br><span class="line">因为各个操作系统的文件对于换行都是不一样的，对于DOS以及Windows操作系统是以CRLF标记换行，即一个回车+一个换行，而Linux或者Unix上面是以LF为标记的，即只有一个换行，因此两者的差异决定了两个系统的文件是不能随便移植的。</span><br><span class="line"></span><br><span class="line">解决方案：</span><br><span class="line"></span><br><span class="line">我说下我的解决方案哈，最简单的方式通过Linux命令将Windows文件转换为Lunix文件——dos2unix</span><br><span class="line"></span><br><span class="line">不过在此之前还是要安装一下这个工具：</span><br><span class="line"></span><br><span class="line">yum install -y dos2unix</span><br><span class="line"></span><br><span class="line">完成后，直接命令加文件名称进行转换：</span><br><span class="line"></span><br><span class="line">dos2unix post-receive</span><br></pre></td></tr></table></figure>
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://xymt.space/2021/01/01/hello-world/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avator.jpeg">
-      <meta itemprop="name" content="心月梦天">
-      <meta itemprop="description" content="我们都曾年轻过 幸福过 并对生活一往情深">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="心月梦天的乌托邦">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2021/01/01/hello-world/" class="post-title-link" itemprop="url">Hello World</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-
-              <time title="创建时间：2021-01-01 01:01:00" itemprop="dateCreated datePublished" datetime="2021-01-01T01:01:00+08:00">2021-01-01</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2021-04-21 02:54:03" itemprop="dateModified" datetime="2021-04-21T02:54:03+08:00">2021-04-21</time>
-              </span>
-
-          <br>
-            <span class="post-meta-item" title="本文字数">
-              <span class="post-meta-item-icon">
-                <i class="far fa-file-word"></i>
-              </span>
-                <span class="post-meta-item-text">本文字数：</span>
-              <span>367</span>
-            </span>
-            <span class="post-meta-item" title="阅读时长">
-              <span class="post-meta-item-icon">
-                <i class="far fa-clock"></i>
-              </span>
-                <span class="post-meta-item-text">阅读时长 &asymp;</span>
-              <span>1 分钟</span>
-            </span>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
-
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-
   
 
 
@@ -645,6 +353,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link"><span class="nav-number">1.</span> <span class="nav-text">起因:</span></a></li><li class="nav-item nav-level-4"><a class="nav-link"><span class="nav-number">2.</span> <span class="nav-text">经过</span></a></li></ol></div>
       </div>
       <!--/noindex-->
 
